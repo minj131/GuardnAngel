@@ -1,9 +1,5 @@
 # GuardnAngel
 
-# **StudyBuddies Documentation**
-
-StudyBuddies documentation available [here](https://highthunder.github.io/CS1530StudyBuddy/)
-
 ## How to use Git, Branch, and Merge
 
 1. Make sure Git is installed in your working environment. Download Git [here](https://git-scm.com/downloads). Run through the installation procedure making sure Git Bash is enabled.
