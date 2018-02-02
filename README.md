@@ -1,5 +1,15 @@
 # GuardnAngel
 
+Goals
+
+1. A sensor interface that alerts emergency services when a user is overdosing.
+
+    1.1 Alerts user (alarm) when heart rate / breathing rate reaches a critical point. When alarm hasn't been turned off for 60 seconds, EMS is called
+        
+    1.2 Gives user option to alert EMS for the user or any nearby users
+
+2. Alerts users with the app when a bad batch is around, looking at medical data, overdose reports, etc
+
 ## How to use Git, Branch, and Merge
 
 1. Make sure Git is installed in your working environment. Download Git [here](https://git-scm.com/downloads). Run through the installation procedure making sure Git Bash is enabled.
