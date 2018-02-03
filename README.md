@@ -16,7 +16,7 @@ Goals
 
 2. Clone the repository to a directory on your computer through Git Bash. This will ask for your github username and password
 
-    `$ git clone https://github.com/highthunder/CS1530StudyBuddy.git` 
+    `$ git clone https://github.com/minj131/GuardnAngel.git` 
 
 3. Almost always, you want to keep the master branch clean. In order to commit any changes, bug fixes, or updates, you need to create a branch from the master allowing a new copy that doesn't affect the master branch.
 
