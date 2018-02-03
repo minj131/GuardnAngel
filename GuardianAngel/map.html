@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="Manuel Lopez" content="">
+
+    <title>Guardian Angel</title>
+
+    <!-- Bootstrap core CSS -->
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="graph.html">Graph</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="help.html">Help</a>
+                </li>
+                <li>
+                    <a href="setting.html">Settings</a>
+                </li>
+                <li>
+                    <a href="ems.html">EMS</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <header>
+            <nav class="navbar navbar-light" style="background-color: #112645;">
+              <a class="navbar-brand" href="help.html" class="btn btn-secondary">
+                <i class="fas fa-inverse fa-arrow-left"> Back</i>
+                </a>
+                <i class="fas fa-inverse fa-map"> Map</i>
+                <form class="form-inline">
+                <a class="btn btn-danger" href="alert.html" role="button">!</a></button>
+              </form>
+            </nav>
+        </header>
+
+        <div id="page-content-wrapper">
+        </br></br>
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-auto"><h2>Rehabilitaion Centers Nearby</h2></div>
+            </div></br>
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-auto">
+                <img src="images/map.png">
+            </div>
+            </div></br></br>
+            <div class="row">
+            <div class="col-md-10 offset-md-1">
+            <table class="table">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>Distance</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Phone Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">5 Miles</th>
+                  <td>UPMC Center for Rehab Services</td>
+                  <td>3471 Fifth Ave., Kaufmann Medical Bldg., Suite 1002</td>
+                  <td>412-890-7332</td>
+                </tr>
+                <tr>
+                  <th scope="row">7 Miles</th>
+                  <td>Nova Care for Rehabilitaion</td>
+                  <td>201 N Craig St</td>
+                  <td>412-943-0987</td>
+                </tr>
+                <tr>
+                  <th scope="row">10 Miles</th>
+                  <td>UPMC CRS Physical Therapy: Oakland Balance Lab</td>
+                  <td>203 Lothrop St., Eye & Ear Institute, Fourth Floor, Room 459</td>
+                  <td>412-432-5621</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

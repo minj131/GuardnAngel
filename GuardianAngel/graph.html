@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="Manuel Lopez" content="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <title>Guardian Angel</title>
+
+
+    <!-- Bootstrap core CSS -->
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="graph.html">Graph</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="help.html">Help</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <a href="ems.html">EMS</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <header>
+            <nav class="navbar navbar-light" style="background-color: #112645;">
+              <a class="navbar-brand" href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">
+                <i class="fas fa-inverse fa-bars"></i>
+                </a>
+                <i class="fas fa-inverse fa-chart-bar"> Graphs</i>
+                <form class="form-inline">
+                <a class="btn btn-danger" href="alert.html" role="button">!</a></button>
+              </form>
+            </nav>
+        </header>
+
+        <div id="page-content-wrapper">
+        </br></br>
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-sm-2">
+                    <a href="#"><h3>Yesterday</h3></a>
+                </div>
+                <div class="col-sm-2 pull-sm-2">
+                    <h3>Today</h3>
+                </div>
+                <div class="col-sm-2 pull-sm-2">
+                    <h3></h3>
+                </div>
+            </div></br>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-10 offset-md-3">
+                        <img src="images/heart_rate.png">
+                    </div>
+                </div></br>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-1 ">
+                    <a class="btn btn-primary" href="#" role="button">Calender</a></button>
+                    </div>
+                    <div class="col-md-2">
+                    <a class="btn btn-secondary" href="heat_map.html" role="button">Heat Map</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
