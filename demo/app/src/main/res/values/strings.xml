@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">GuardnAngel</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sensor">SensorActivity</string>
+    <string name="title_activity_device_list">DeviceListActivity</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+
+    <string name="get_help">
+        PROJECT LAZARUS\n\n
+
+        Thousands of brothers, sisters, mothers, fathers, sons, and daughters die every year due to heroin overdoses.\n
+        Don\'t be another statistic.\n\n
+
+        GuardnAngels is a last resort for the truly desperate and this app should always be treated as such.
+        Our philosophy is harm prevention and harm reduction, when all else fails. However, there are many
+        resources available for heroin dependence and substance abuse.\n\n
+
+        From inpatient treatment to detox programs, all it takes is a single choice to walk the other path.\n\n
+
+        Call 1-800-662-HELP (4357).
+    </string>
+
+    <string name="about_text"><![CDATA[
+
+            <p><strong>
+                The heroin epidemic in America has grown from a distant street problem to a national issue that has infected the neighborhoods of many towns across the US. Between 2000 – 2014 the number of overdose deaths has risen by 137% and is now the leading cause of accidental death in the US with 52,404 lethal drug overdoses in 2015. Four in five new heroin users started out misusing prescription painkillers and 94% of respondents in a 2014 survey of people in treatment for opioid addiction said they chose to use heroin because prescription opioids were “far more expensive and harder to obtain”. The danger of overdose has vastly increased with the uncertainties accompanied with street sold drugs. Many batches are often laced with other synthetic opioids that are often more deadly such as Fentanyl which is up to 100x more potent than morphine and many times that of heroin.
+                <br />
+                <br />
+                While fatal overdoses are significant, attention should also be brought to non fatal overdose that often have the possibilities of leaving the victim with numerous long-term effects such as cardiac and muscular problems, brain damage, hearing loss, and other injuries sustained during overdose. Overdose death can occur within minutes of dosing but more commonly takes a period of hours after use during which the victim is unresponsive. On top of all that, an estimated 50% of all heroin overdose deaths occur when a person chooses to use it with no one present to resuscitate, call 911 or administer Naloxone. It is those moments when no one else is there that we want to step in and offer help.
+            </strong></p>
+    ]]></string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_pair">PairActivity</string>
+    <string name="title_activity_heat_map">HeatMapActivity</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pittchallenge.guardnangel">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.example.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/no_title">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SensorActivity"
+            android:label="@string/title_activity_sensor"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/no_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pittchallenge.guardnangel.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/no_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pittchallenge.guardnangel.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/no_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pittchallenge.guardnangel.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HowToActivity"
+            android:label="@string/title_activity_pair"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/no_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pittchallenge.guardnangel.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HeatMapActivity"
+            android:label="@string/title_activity_heat_map"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/no_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pittchallenge.guardnangel.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAR28BJuLvLf80CoIrnpptsMX8yAhbFkRw" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

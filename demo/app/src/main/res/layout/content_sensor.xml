@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pittchallenge.guardnangel.SensorActivity"
+    tools:showIn="@layout/app_bar_sensor">
+
+    <RelativeLayout
+        android:id="@+id/bpm_parent"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:gravity="center_vertical"
+        android:translationY="100dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="44dp">
+
+        <TextView
+            android:id="@+id/bpm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bpm_view"
+            android:layout_alignBottom="@+id/bpm_view"
+            android:layout_toEndOf="@+id/bpm_view"
+            android:text="bpm"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="191dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+        <TextView
+            android:id="@+id/bpm_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="67dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            android:textColor="@android:color/black"
+            android:textSize="100sp" />
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:paddingRight="20dp"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/start" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
