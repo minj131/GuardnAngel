@@ -1,60 +1,24 @@
 # GuardnAngel
+## PittChallenge 2018 Submission
 
-Goals
+## Inspiration
 
-1. A sensor interface that alerts emergency services when a user is overdosing.
+After personally experiencing the tragic effects of the heroin epidemic, we wanted to find a non traditional way to tackle the problem of fentanyl-related overdose deaths in the USA. Rather than tackling the issue by promoting prohibition, we decided a better idea was education, harm reduction, and harm prevention. By taking this approach, we are not condoning drug use but rather giving users a last resort should the worst case scenario occur. We believe in second chances; for people to turn their lives around in hopes that one day they'll seek the help they need as we collectively mourn for those we have already lost.
 
-    1.1 Alerts user (alarm) when heart rate / breathing rate reaches a critical point. When alarm hasn't been turned off for 60 seconds, EMS is called
-        
-    1.2 Gives user option to alert EMS for the user or any nearby users
+## What it does
 
-2. Alerts users with the app when a bad batch is around, looking at medical data, overdose reports, etc
+GuardnAngel consists of three primary functions.
 
-## How to use Git, Branch, and Merge
+1. The main function is a mobile app that connects to a simple arduino interface via BlueTooth that measures vitals such as heart and respiratory rate while an individual is using heroin. When the user's vitals reach a critical point, the app signals an alarm. If the user does not respond to the alarm in 60 seconds, assuming that the user is overdosing and currently unresponsive, emergency services are called (equipped with Narcan) and the location data of the user is sent to the emergency contact listed in the app. Additionally, the user has an option to quickly alert EMS in case they witness someone else overdosing.
 
-1. Make sure Git is installed in your working environment. Download Git [here](https://git-scm.com/downloads). Run through the installation procedure making sure Git Bash is enabled.
+2. The app provides a list of resources for the user should they ever decide to seek help listing rehab and support options, phone numbers, and organizations to reach out to.
 
-2. Clone the repository to a directory on your computer through Git Bash. This will ask for your github username and password
+3. The app has a real time feed of heroin overdoses displayed visually as a heat map based on their current location. Currently, we only have data for Pennsylvania.
 
-    `$ git clone https://github.com/minj131/GuardnAngel.git` 
+## How we built it
 
-3. Almost always, you want to keep the master branch clean. In order to commit any changes, bug fixes, or updates, you need to create a branch from the master allowing a new copy that doesn't affect the master branch.
+We first built the sensor using an Arduino Uno micro-controller with an HC-05 BT module to serve as the interface between the app and the sensor. The BT module serves as the bridge to write the Serial information from the arduino board to the android application. We used a cheap knock off brand, and because we didn't have a volt-splitter, the module did not work as well as we wanted it to. It still works as a proof of concept.
 
-4. Before creating a new branch, make sure the local master branch is up to date. This will update your remote repository to reflect the current state of the master.
-```
-  $ git fetch // Syncs your computer's knowledge of the entire repository with github without changing anything.
-  $ git checkout origin/master
-```
-5. Create a new branch on your local machine.
+Next, we built the primary application on Android Studio. Mostly vanilla.
 
-    `$ git checkout -b name_of_branch`
-    
-6. To view working branches, or to change to an exiting branch.
-```
-  $ git branch // view working branches
-  $ git checkout name_of_branch // change to an existing branch
-```
-
-7. Push the branch to github. You can also add a remote to your branch but is not necessary for our purposes. 
-
-    `$ git push origin name_of_branch`
-    
-8. Do some changes on your new branch. Now we need to push the changes to the branch on Github. The name 'add' is a little confusing because it does two things, it is used to tell git to start keeping track of a file, and it is used to tell git that you have made changes to a file which you want to include in your next commit.
-```
-  $ git status // shows you what files have changed. Changed files that have not been added are called 'unstaged' and will be shown in red.
-
-  $ git add filename // Adds filename to the current commit
-  $ git add . // Adds all files in the current directory and all subdirectories.
-  $ git add -A // Adds all changed files in the repository.
-
-  $ git status // Now you will see that your changes have been staged and are shown in green
-
-  $ git commit -m "message explaining the changes"
-  $ git push -u origin name_of_branch // pushes changes to github
-```
-
-9. Now at this point, the new branch on Github will be X amount of commits ahead of the master branch. We need to merge the working branch into the master branch. To make things simpler, go onto the Github repository and click on Pull Requests, create a new Pull Request, and select the appropriate branches.
-
-![Pull_Request](https://i.imgur.com/01BcWpr.png)
-
-10. Submit pull request, commenting on changes if need be. The PR then needs to be approved by at least one other person before being able to be merged into the master branch. 
+For the heat map, we compiled the data on MatLab but it turned out to be a bit more complicated than we had anticipated. Joe took it a step further and using a standard distribution model to pull meaningful data out of areas that did not have a lot of info. Instead we took the live data, converted it to JSON, and fed it through the Google Maps HeatMap API.
